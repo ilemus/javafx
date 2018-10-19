@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import ui.controllers.LauncherController;
 
 public class Launcher extends Application {
     public static void main(String[] args) {
@@ -21,5 +22,7 @@ public class Launcher extends Application {
         primaryStage.setScene(scene);
         
         primaryStage.show();
+        
+        LauncherController.ownerStage = primaryStage;
     }
 }
